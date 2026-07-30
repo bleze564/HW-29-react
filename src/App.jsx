@@ -1,3 +1,6 @@
+import { ContactForm } from "./components/ContactForm";
+import { ContactList } from "./components/ContactList";
+import { SearchBox } from "./components/SearchBox";
 export const App = () => {
   return (
     <div
@@ -7,10 +10,14 @@ export const App = () => {
         justifyContent: 'center',
         alignItems: 'center',
         fontSize: 40,
-        color: '#010101'
+       
       }}
     >
-      React homework template
+      <>
+        <ContactForm />
+        <SearchBox />
+        <ContactList />
+      </>
     </div>
   );
 };
